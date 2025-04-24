@@ -3,7 +3,6 @@ import { useState } from 'react'
 import viteLogo from '/vite.svg'
 import './App.css'
 import AgregarTarea from './modules/agregarTarea.jsx'
-import FormatearFecha from './modules/fecha.jsx'
 import AgregarFiltro from './modules/agregarFiltro.jsx'
 
 function App() {
@@ -22,8 +21,8 @@ function App() {
       <AgregarFiltro contenido="🕓"/>
     </div>
     <div id="listaTareas">
-      <AgregarTarea nombre="Comprar verduras" fecha={FormatearFecha(new Date())}/>
-      <AgregarTarea nombre="Estudiar judía" fecha={FormatearFecha(new Date())}/> 
+      <AgregarTarea nombre="Comprar verduras" fecha="23/04/2025" completada={true}/>
+      <AgregarTarea nombre="Estudiar judía" fecha="24/04/2025" completada={false}/> 
   </div>
   </div>
   )
