@@ -23,7 +23,7 @@ function App() {
     <div id="listaTareas">
       <AgregarTarea nombre="Comprar verduras" fecha="23/04/2025" completada={true}/>
       <AgregarTarea nombre="Estudiar judía" fecha="24/04/2025" completada={false}/> 
-  </div>
+    </div>
   </div>
   )
 }
